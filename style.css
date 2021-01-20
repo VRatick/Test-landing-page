@@ -6,8 +6,7 @@
 /* COVID-19 info container */
 
 .warning-info-container {
-    background-color: #F2F2F2;
-    margin: auto;
+    background-color: #F2F2F2;    
     height: 22px;
     width: 100%;
     text-align: center;
@@ -16,13 +15,19 @@
     font-family: "TradeGothicLTStd-Extended";    
 }
 
+.warning-info {
+    margin: auto;
+    max-width: 980px;
+}
+
 /* Navigation container */
 
 .title-container {
-    width: 100%;
+    max-width: 980px;
     height: 250px;
     text-align: center;
     position: relative;
+    margin: auto;
 }
 
 .nav-link {
@@ -68,7 +73,7 @@
 }
 
 .icon-box {
-    margin-top: 5px;
+    margin: 5px 5px 5px 5px;
     text-align: right;
     position: relative;
 }
@@ -94,7 +99,12 @@
     color: white;
     text-align: center;
     width: 100%;
-    height: 315px;      
+    height: 315px;  
+}
+
+.information-container-box {
+    max-width: 980px;
+    margin: auto;
 }
 
 .information-title {
@@ -118,9 +128,10 @@
 /* Title container */
 
 .text-container {
-    width: 100%;
+    max-width: 980px;
     height: 155px;
     text-align: center;
+    margin: auto;
     
 }
 
@@ -136,13 +147,17 @@
     display: none;
 }
 
+.text-box {
+    position: relative;
+}
+
 .text {
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
     text-align: center;
     position: absolute;
-	top: 675px;	
+	top: 75px;	
     width: 100%;  
     font-family: "Ogg-Roman";  
 }
@@ -153,11 +168,18 @@
     width: 100%;
     min-height: 520px;
     max-height: 1040px;
-    background-color: #F4BAB5;
+    background-color: #F4BAB5;    
+}
+
+.carousel-container-box {
+    max-width: 980px;
+    min-height: 520px;
+    max-height: 1040px;
+    margin: auto;
     text-align: center;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: relative;   
 }
 
 .carousel-desktop {
@@ -223,6 +245,7 @@
 .marker {
     position: absolute;
     bottom: 0;
+    left: 46%;
 }
 
 .button {
@@ -337,10 +360,11 @@
 /* Photo container */
 
 .photo-container {
-    width: 100%;
+    max-width: 980px;
     min-height: 500px;
     max-height: 5600px;
     font-family: "Ogg-Roman";
+    margin: auto;
 }
 
 .photo-title {    
@@ -352,7 +376,7 @@
     margin-bottom: 30px;     
 }
 
-.photos{
+.photos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -507,15 +531,21 @@
 /* About us container */
 
 .about-us-container {
-    display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
     width: 100%;
     min-height: 246px;
     align-items: center;
     font-size: 11px;
     font-family: "TradeGothicLTStd-BoldExt";
-}    
+}  
+
+.about-us-container-box {
+    max-width: 980px;
+    margin: auto;
+    padding-top: 65px;    
+    display: flex;
+    justify-content: space-between;
+}
 
 .about-us-box {
     width: 175px;

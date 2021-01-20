@@ -29,7 +29,7 @@ function visibleContainer (containerID) {
   var box = document.getElementById(containerID)
   var button = containerID !== 'nav-box-mobile' ? document.getElementById(containerID + '-button') : null
   if (box.className === 'hide') {
-    button !== null ? button.innerText = 'X': null;
+    button !== null ? button.innerText = '—': null;
     box.className = 'show'
   }
   else {
