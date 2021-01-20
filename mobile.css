@@ -1,0 +1,236 @@
+@media screen and (max-width: 640px) {
+
+    /* COVID-19 info container */
+
+    .warning-info-container {
+        font-size: 8.4px;
+        font-weight: 400;
+        line-height: 11.9px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .warning-info {
+        width: 300px;        
+    }
+
+    /* Navigation container */
+
+    .nav-box {
+        display: none;
+    }    
+
+    .nav-box-mobile {
+        display: block;
+        position: absolute;     
+        top: 0;
+        left: 30px;
+        z-index: 1000;
+        background-color: #F2F2F2;
+        
+    }
+
+    #nav-box-mobile { 
+        border: 2px solid black;
+        padding: 5px 5px 5px 5px;     
+        box-shadow: 0 0 10px black;
+    }
+
+    .icon-line {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 27px;
+        height: 27px;
+    }
+
+    /* Information container */
+
+    .information-title {
+        padding: 10px 10px 10px 10px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 63px;        
+        font-family: "Ogg-Roman";
+    }
+
+    .information-text {
+        margin-top: 0;
+        line-height: 25px;        
+    }
+
+    /* Title container */
+
+    .text-background {    
+        display: none;  
+        
+    }
+    
+    .text-background-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin-top: 20px; 
+    }
+
+    .text {
+        font-size: 25px;        
+    }
+
+    /* Carousel container */
+
+    .carousel-desktop {
+        display: none;
+    }    
+    
+    .carousel-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 520px;        
+        background-color: #F4BAB5;
+        text-align: center;        
+        position: relative;
+    }
+
+    .info-title {
+        font-size: 16px;      
+        margin-top: 25px;  
+    }
+
+    .info-name {
+        margin-top: 10px;
+        font-size: 25px;        
+    }
+
+    .webcam {
+        position: relative;
+        margin-top: 0;
+        padding-top: 0;
+        height: 200px;
+        width: 200px;   
+        margin-bottom: 55px;     
+    }
+
+    .webcam-box {
+        width: 200px;
+        height: 200px;
+        text-align: center;  
+        margin: auto;          
+    }
+    
+    .webcam-icon {
+        width: 200px;
+        height: 200px; 
+        position: absolute;        
+        left: 5px;
+        top: 0;
+    }
+    
+    .webcam-photo {
+        width: 100px;
+        height: 100px;     
+        position: absolute;
+        top: 50px;   
+        left: 50px;      
+    }
+    
+    .button {  
+        background-color: black;
+        color: white;
+    }
+
+    .button:hover {
+        border: 2px solid black;    
+        background-color:#7A5D5A;    
+    }
+    
+    .button-round {         
+        margin-left: 0;          
+    }
+
+    /* About us container */
+
+    .about-us-mobile {
+        display: block;
+    }
+
+    .about-us-container {
+        justify-content: start;
+        flex-direction: column;        
+        min-height: 246px;        
+    }
+
+    .about-us-box-mobile {
+        width: 300px; 
+        margin-bottom: 10px;  
+        border-top: 1px solid black;             
+    }
+
+    .about-us-box {
+        display: none;
+    }
+
+    .about-us-title {
+        padding-top: 10px;   
+        padding-bottom: 5px;         
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .activate-button {
+        border: none;
+    }
+
+    .hide {           
+        display: none;
+    }
+
+    .show {           
+        display: block;
+    }
+
+    .follow-us-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .follow-us-facebook {
+        width: 8px;
+        height: 15px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .follow-us-icon {
+        width: 15px;
+        height: 15px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .subscribe-box {
+        margin-top: 45px;
+        margin-bottom: 45px;    
+    }    
+  }
+
+@media screen and (max-width: 384px) {
+    .webcam-icon {
+        width: 125px;
+        height: 125px; 
+        position: absolute;        
+        left: 40px;
+        top: 0;
+    }
+    
+    .webcam-photo {
+        width: 75px;
+        height: 75px;     
+        position: absolute;
+        top: 25px;   
+        left: 62px;      
+    }
+}

@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Test landing page</title>
 </head>
 <body>
     <div class='warning-info-container'>  
-        <span>COVID-19: Learn what we're doing to keep the community and our statt sate</span>
+        <div class="warning-info">
+            <span>COVID-19: Learn what we're doing to keep the community and our statt sate</span>
+        </div>        
     </div>
+
     <div class='title-container'>
         <div class="icon-box">
+            <a href="#">
+                <img class="icon-line" src="./Images/lines.svg"  onclick="visibleContainer('nav-box-mobile')"/>
+            </a>
             <a href="#">
                 <img class="icon" src="./Images/loupe.svg"/>
             </a>
@@ -43,7 +50,22 @@
                 <a href="#" class="nav-link">STORIES</a>        
             </nav>
         </div>
+        <div class='nav-box-mobile'>
+            <div id="nav-box-mobile" class='hide'>
+                <a href="#" class="nav-link">WHAT'S NEW</a><br>
+                <a href="#" class="nav-link">BRANDS</a><br>
+                <a href="#" class="nav-link">CURATIONS</a><br>
+                <a href="#" class="nav-link">ART</a><br>
+                <a href="#" class="nav-link">BEAUTY</a><br>
+                <a href="#" class="nav-link">SELF CARE</a><br>
+                <a href="#" class="nav-link">STYLE</a><br>
+                <a href="#" class="nav-link">LIFESTYLE</a><br>
+                <a href="#" class="nav-link">TECH</a><br>
+                <a href="#" class="nav-link">STORIES</a>     
+            </div>
+        </div>
     </div>
+
     <div class='information-container'>
         <div class='information-title'>
             <span>
@@ -61,15 +83,51 @@
     <div class="text-container">
         <div class='text-box'>
             <img class='text-background'src='./Images/background_stars.svg'/>
+            <img class='text-background-mobile'src='./Images/background_mobile.svg'/>
             <div class='text'>
                 Upcoming Curation
             </div>
         </div>
     </div>
-    <div class="carousel-conainer">
+
+    <div class="carousel-container">
         <div class="carousel-counter">
             <div class='carousel'>
-                <div class="webcam-box">
+                <div class='carousel-desktop'>
+                    <div class="webcam-box">
+                        <div class="webcam">
+                            <img class="webcam-icon" src="./Images/photo_icon.svg" />
+                            <img class="webcam-photo" src="./Images/woman.png" />                    
+                        </div>
+                        <button class='button-round'>
+                            <div class="record-icon"></div>
+                            <div>
+                                <span class='button-round-text'>
+                                    LIVE RECORDING
+                                </span>                   
+                            </div> 
+                        </button>
+                    </div>
+                    <div class="information-box">
+                        <div class="info-title">
+                            <span >A LIVE CURATION WITH</span>
+                        </div>
+                        <div class="info-name">
+                            <span >Maristella Gonzalez</span>
+                        </div>
+                        <div class="info-description">
+                            <span>Enter the wonderous world of Showfields. Our mission is to create a better way for customers to discover, engage and shop emerging brands and artists tomorrow.</span>
+                        </div>            
+                        <button class='button'>RSVP</button>
+                    </div>
+                </div>
+                <div class="carousel-mobile">
+                    <div class="info-title">
+                        <span >A LIVE CURATION WITH</span>
+                    </div>
+                    <div class="info-name">
+                        <span >Maristella Gonzalez</span>
+                    </div>
                     <div class="webcam">
                         <img class="webcam-icon" src="./Images/photo_icon.svg" />
                         <img class="webcam-photo" src="./Images/woman.png" />                    
@@ -82,24 +140,50 @@
                             </span>                   
                         </div> 
                     </button>
-                </div>
-                <div class="information-box">
-                    <div class="info-title">
-                        <span >A LIVE CURATION WITH</span>
-                    </div>
-                    <div class="info-name">
-                        <span >Maristella Gonzalez</span>
-                    </div>
                     <div class="info-description">
-                        <span>Enter the wonderous world of Showfields. Our mission is to create a better way for customers to discover, engage and shop emerging brands and artists tomorrow.</span>
+                        <span>Our mission is to create a better way for customers to discover, engage and shop emerging brands and artists of tomorrow.</span>
                     </div>            
                     <button class='button'>RSVP</button>
-                </div>
+                </div>                
             </div>
         </div>
         <div class="carousel-counter">
             <div class='carousel'>
-                <div class="webcam-box">
+                <div class='carousel-desktop'>
+                    <div class="webcam-box">
+                        <div class="webcam">
+                            <img class="webcam-icon" src="./Images/photo_icon.svg" />
+                            <img class="webcam-photo" src="./Images/Connor.png" />                    
+                        </div>
+                        <button class='button-round'>
+                            <div class="record-icon"></div>
+                            <div>
+                                <span class='button-round-text'>
+                                    LIVE RECORDING
+                                </span>                   
+                            </div> 
+                        </button>
+                    </div>
+                    <div class="information-box">
+                        <div class="info-title">
+                            <span >A LIVE CURATION WITH</span>
+                        </div>
+                        <div class="info-name">
+                            <span >Ratonhnhaké:ton</span>
+                        </div>
+                        <div class="info-description">
+                            <span>The others in the village – they thought this was something I wanted. Something I chose to do. But it never felt that way to me. No, it was not a choice. It was an obligation.</span>
+                        </div>            
+                        <button class='button'>RSVP</button>
+                    </div>
+                </div>
+                <div class='carousel-mobile'>
+                    <div class="info-title">
+                        <span >A LIVE CURATION WITH</span>
+                    </div>
+                    <div class="info-name">
+                        <span >Ratonhnhaké:ton</span>
+                    </div>
                     <div class="webcam">
                         <img class="webcam-icon" src="./Images/photo_icon.svg" />
                         <img class="webcam-photo" src="./Images/Connor.png" />                    
@@ -112,16 +196,8 @@
                             </span>                   
                         </div> 
                     </button>
-                </div>
-                <div class="information-box">
-                    <div class="info-title">
-                        <span >A LIVE CURATION WITH</span>
-                    </div>
-                    <div class="info-name">
-                        <span >Ratonhnhaké:ton</span>
-                    </div>
                     <div class="info-description">
-                        <span>The others in the village – they thought this was something I wanted. Something I chose to do. But it never felt that way to me. No, it was not a choice. It was an obligation.</span>
+                        <span>Nothing is true, everything is permitted.</span>
                     </div>            
                     <button class='button'>RSVP</button>
                 </div>
@@ -129,10 +205,44 @@
         </div>
         <div class="carousel-counter">
             <div class='carousel'>
-                <div class="webcam-box">
+                <div class='carousel-desktop'>
+                    <div class="webcam-box">
+                        <div class="webcam">
+                            <img class="webcam-icon" src="./Images/photo_icon.svg" />
+                            <img class="webcam-photo" src="./Images/cat.png" />                    
+                        </div>
+                        <button class='button-round'>
+                            <div class="record-icon"></div>
+                            <div>
+                                <span class='button-round-text'>
+                                    LIVE RECORDING
+                                </span>                   
+                            </div> 
+                        </button>
+                    </div>
+                    <div class="information-box">
+                        <div class="info-title">
+                            <span >A LIVE CURATION WITH</span>
+                        </div>
+                        <div class="info-name">
+                            <span >Mr. Fluffy</span>
+                        </div>
+                        <div class="info-description">
+                            <span>Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow? </span>
+                        </div>            
+                        <button class='button'>RSVP</button>
+                    </div>
+                </div>
+                <div class='carousel-mobile'>
+                    <div class="info-title">
+                        <span >A LIVE CURATION WITH</span>
+                    </div>
+                    <div class="info-name">
+                        <span >Mr. Fluffy</span>
+                    </div>
                     <div class="webcam">
                         <img class="webcam-icon" src="./Images/photo_icon.svg" />
-                        <img class="webcam-photo" src="./Images/cat.png" />                    
+                        <img class="webcam-photo" src="./Images/cat.png" />             
                     </div>
                     <button class='button-round'>
                         <div class="record-icon"></div>
@@ -142,16 +252,8 @@
                             </span>                   
                         </div> 
                     </button>
-                </div>
-                <div class="information-box">
-                    <div class="info-title">
-                        <span >A LIVE CURATION WITH</span>
-                    </div>
-                    <div class="info-name">
-                        <span >Mr. Fluffy</span>
-                    </div>
                     <div class="info-description">
-                        <span>Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow! Meow? </span>
+                        <span>Meow?</span>
                     </div>            
                     <button class='button'>RSVP</button>
                 </div>
@@ -164,7 +266,8 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-    </div>
+    </div>    
+
     <div class='photo-container'>
         <div class='photo-title'>
             <p class="photo-text">Watch Resent Live Curations</p>
@@ -249,6 +352,7 @@
             </div>
         </div>
     </div>
+
     <div class='about-us-container'>
         <div class="about-us-box">
             <p>ABOUT SHOWFIELDS</p><br>
@@ -281,6 +385,52 @@
             <div class="subscribe-input-box">
                 <input class="subscribe-input" placeholder="Enter your email to subscribe" />            
                 <button class="subscribe-button">&#8594</button>
+            </div>
+        </div>
+        <div class='about-us-mobile'>
+            <div class="about-us-box-mobile">
+                <div class='about-us-title'>
+                    <div>ABOUT SHOWFIELDS</div>
+                    <div id='about-showfields-button' onclick="visibleContainer('about-showfields')">+</div>
+                </div>         
+                <div id='about-showfields' class='hide'>
+                    <a class="link" href="#">About</a><br>
+                    <a class="link" href="#">Contact</a><br>
+                    <a class="link" href="#">FAQ</a><br>
+                    <a class="link" href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="about-us-box-mobile">
+                <div class='about-us-title'>
+                    <div>VISIT US</div>
+                    <div id='visit-us-button' onclick="visibleContainer('visit-us')">+</div>
+                </div>
+                <div id='visit-us' class='hide'>
+                    <a class="link" href="#">Location</a><br>
+                    <a class="link" href="#">Store Appointments</a><br>
+                    <a class="link" href="#">Virtual Appointments</a>
+                </div>         
+            </div>
+            <div class="about-us-box-mobile">
+                <div class='about-us-title'>
+                    <div>PARTNER WITH US</div>
+                    <div id='partner-with-us-button' onclick="visibleContainer('partner-with-us')">+</div>
+                </div>
+                <div id='partner-with-us' class='hide'>
+                    <a class="link" href="#">Artists</a><br>
+                    <a class="link" href="#">Brand Parternships</a><br>
+                    <a class="link" href="#">Careers</a>         
+                </div>
+            </div>
+            <div class="about-us-box-mobile">
+                <div class="follow-us-box">
+                    <a href="#">
+                        <img class="follow-us-facebook" src="./Images/facebook.svg"/>
+                    </a>
+                    <a href="#">
+                        <img class="follow-us-icon" src="./Images/instagram.svg"/>
+                    </a>                      
+                </div>
             </div>
         </div>
     </div>

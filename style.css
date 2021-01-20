@@ -22,6 +22,7 @@
     width: 100%;
     height: 250px;
     text-align: center;
+    position: relative;
 }
 
 .nav-link {
@@ -39,9 +40,17 @@
     margin-top: 10px;
 }
 
+.nav-box-mobile {
+    display: none;
+}
+
 .icon {
     width: 27px;
     height: 27px;
+}
+
+.icon-line {
+    display: none;
 }
 
 .icon-heart {
@@ -61,18 +70,21 @@
 .icon-box {
     margin-top: 5px;
     text-align: right;
+    position: relative;
 }
 
-.title-image {
+.title-image {    
     width: 67px;
     height: 82px;
-    margin: auto;
+    margin: auto; 
+    z-index: 1;  
 }
 
-.title-banner {
+.title-banner {    
     width: 286px;
     height: 79px;
     margin: auto;
+    z-index: 1;    
 }
 
 /* Information container */
@@ -113,11 +125,15 @@
 }
 
 .text-background {    
-    width: 900px;
-    height: 119px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     margin-top: 20px;   
     
+}
+
+.text-background-mobile {
+    display: none;
 }
 
 .text {
@@ -133,20 +149,31 @@
 
 /* Carousel container */
 
-.carousel-conainer {
+.carousel-container {
     width: 100%;
-    height: 520px;
+    min-height: 520px;
+    max-height: 1040px;
     background-color: #F4BAB5;
     text-align: center;
     display: flex;
     justify-content: center;
     position: relative;
-}    
+}
+
+.carousel-desktop {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;   
+}
+
+.carousel-mobile {
+    display: none;
+}
 
 .carousel {
-    width: 900px;    
     display: flex; 
-    justify-content: center;     
+    justify-content: center;      
 }
 
 .prev, .next {
@@ -204,7 +231,9 @@
     height: 34px;
     background-color: #F4BAB5;
     margin-top: 30px;
+    margin-bottom: 50px;
     font-family: "TradeGothicLTStd-Extended";
+
 }
 
 .button:hover {
@@ -214,7 +243,7 @@
 
 .information-box {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 85px;
     width: 500px;
 }
 
@@ -482,7 +511,7 @@
     justify-content: space-between;
     background-color: #F2F2F2;
     width: 100%;
-    height: 246px; 
+    min-height: 246px;
     align-items: center;
     font-size: 11px;
     font-family: "TradeGothicLTStd-BoldExt";
@@ -502,6 +531,10 @@
     margin-left: 10px;       
 }
 
+.about-us-mobile {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -512,7 +545,7 @@ a:hover {
 }
 
 .subscribe-input {    
-    width: 80%;
+    width: 92%;
     border: 0;   
     outline: 0;    
     padding: 7px 0;
@@ -522,8 +555,8 @@ a:hover {
 .subscribe-input-box:after {
 	content: "";
 	display: block;
-	height: 2px;
-	width: 90%;
+	height: 1px;
+	width: 100%;
 	margin-top: 5px;	
 	background-color:black;
 }

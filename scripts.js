@@ -24,3 +24,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function visibleContainer (containerID) {
+  var box = document.getElementById(containerID)
+  var button = containerID !== 'nav-box-mobile' ? document.getElementById(containerID + '-button') : null
+  if (box.className === 'hide') {
+    button !== null ? button.innerText = 'X': null;
+    box.className = 'show'
+  }
+  else {
+    button !== null ? button.innerText = '+': null;
+    box.className = 'hide'
+  }
+  
+}
